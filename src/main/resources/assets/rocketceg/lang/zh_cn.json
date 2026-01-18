@@ -1,0 +1,26 @@
+{
+  "itemGroup.rocketceg.rocketceg_tab": "火箭 CEG",
+  
+  "block.rocketceg.launch_pad": "发射台",
+  "block.rocketceg.rocket_cockpit": "火箭指令舱",
+  "block.rocketceg.rocket_engine": "火箭发动机",
+  "block.rocketceg.rocket_fuel_tank": "火箭燃料箱",
+  "block.rocketceg.rocket_frame": "火箭结构段",
+  "block.rocketceg.engine_mount": "发动机安装架",
+  "block.rocketceg.avionics_bay": "航电舱",
+  "block.rocketceg.interstage": "级间段",
+  
+  "block.rocketceg.earth_surface_block": "地球表面方块",
+  "block.rocketceg.moon_surface_block": "月球表面方块",
+  "block.rocketceg.mars_surface_block": "火星表面方块",
+  "block.rocketceg.venus_surface_block": "金星表面方块",
+  "block.rocketceg.mercury_surface_block": "水星表面方块",
+  "block.rocketceg.jupiter_surface_block": "木星表面方块",
+  "block.rocketceg.saturn_surface_block": "土星表面方块",
+  "block.rocketceg.uranus_surface_block": "天王星表面方块",
+  "block.rocketceg.neptune_surface_block": "海王星表面方块",
+  "block.rocketceg.pluto_surface_block": "冥王星表面方块",
+  
+  "item.rocketceg.rocket_blueprint": "火箭设计蓝图",
+  "item.rocketceg.rocket_navigation_computer": "火箭导航计算机"
+}

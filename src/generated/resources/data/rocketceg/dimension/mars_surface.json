@@ -1,0 +1,11 @@
+{
+  "type": "rocketceg:mars_surface",
+  "generator": {
+    "type": "minecraft:noise",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "rocketceg:mars_desert"
+    },
+    "settings": "minecraft:overworld"
+  }
+}

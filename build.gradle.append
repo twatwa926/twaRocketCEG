@@ -1,0 +1,15 @@
+// 在数据生成前自动删除 Create 和 GTM 模组，避免 Mixin 冲突
+task cleanDataMods(type: Delete) {
+    delete fileTree('run-data/mods') {
+        include 'create-*.jar'
+        include 'gtceu-*.jar'
+    }
+    // 确保目录存在
+    doFirst {
+        file('run-data/mods').mkdirs()
+    }
+}
+
+tasks.named('runData').configure {
+    dependsOn 'cleanDataMods'
+}

@@ -1,0 +1,40 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = "MIT"
+
+[[mods]]
+modId = "rocketceg"
+version = "${mod_version}"
+displayName = "${mod_name}"
+authors = "YourName"
+description = '''
+Create × GTM compatible rocket physics demo mod with seamless dimension teleportation.
+'''
+
+[[dependencies.rocketceg]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.rocketceg]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,1.21)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.rocketceg]]
+modId = "create"
+mandatory = false
+versionRange = "[0.5.1,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.rocketceg]]
+modId = "gtceu"
+mandatory = false
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"

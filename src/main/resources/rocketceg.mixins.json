@@ -1,0 +1,34 @@
+{
+  "required": true,
+  "minVersion": "0.8.5",
+  "package": "com.example.rocketceg.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "mixins.rocketceg.refmap.json",
+  "mixins": [
+    "server.MixinServerPlayer",
+    "server.MixinServerLevel",
+    "server.MixinMinecraftServer",
+    "server.MixinPlayerList",
+    "server.MixinServerGamePacketListenerImpl",
+    "server.MixinChunkMap",
+    "server.MixinServerPlayerPortal"
+  ],
+  "client": [
+    "client.MixinClientPacketListener",
+    "client.MixinMinecraft",
+    "client.MixinLevelRenderer",
+    "client.MixinLevelRendererSunMoon",
+    "client.MixinLocalPlayer",
+    "client.MixinGameRenderer",
+    "client.MixinMultiPlayerGameMode",
+    "client.MixinClientLevel",
+    "client.MixinCamera",
+    "client.MixinGui",
+    "client.MixinLoadingOverlay",
+    "client.MixinLevelRendererPortal",
+    "client.MixinCameraPortal"
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}

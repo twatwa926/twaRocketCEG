@@ -1,0 +1,39 @@
+# 😡 Gradle 😡
+.gradle/
+build/
+out/
+bin/
+
+# 😡 IDE 😡
+.idea/
+*.iml
+*.ipr
+*.iws
+.eclipse/
+.settings/
+.classpath
+.project
+.vscode/
+
+# 😡 运行时 😡
+run/
+run-data/
+logs/
+
+# 😡 操作系统 😡
+.DS_Store
+Thumbs.db
+
+# 😡 临时文件 😡
+*.log
+*.tmp
+*.bak
+*~
+
+# 😡 依赖 😡
+*.jar
+!gradle-wrapper.jar
+*.zip
+
+# 😡 编译产物 😡
+*.class
