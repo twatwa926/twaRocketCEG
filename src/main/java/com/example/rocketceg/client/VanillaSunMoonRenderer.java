@@ -13,8 +13,8 @@ import org.joml.Matrix4f;
 public class VanillaSunMoonRenderer {
     
     // 😡 Minecraft 原版材质路径 😡
-    private static final ResourceLocation SUN_LOCATION = new ResourceLocation("textures/environment/sun.png");
-    private static final ResourceLocation MOON_LOCATION = new ResourceLocation("textures/environment/moon_phases.png");
+    private static final ResourceLocation SUN_LOCATION = new ResourceLocation("minecraft", "textures/environment/sun.png");
+    private static final ResourceLocation MOON_LOCATION = new ResourceLocation("minecraft", "textures/environment/moon_phases.png");
     
     /** 😡 渲染立体太阳（使用原版材质） * * @param poseStack 姿态栈 * @param timeOfDay 一天中的时间 (0.0 - 1.0) * @param partialTick 部分刻 😡
      */

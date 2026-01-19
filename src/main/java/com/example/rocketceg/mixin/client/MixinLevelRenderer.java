@@ -34,25 +34,30 @@ public class MixinLevelRenderer {
     
     @Unique
     private com.example.rocketceg.client.OverworldSkyRenderer overworldSkyRenderer;
-    
-    @Unique
-    private boolean rocketceg$shouldCancelVanillaSunMoon = false;
 
-    /** 😡 在渲染天空之前检查是否需要取消原版日月渲染 😡
+    /** 😡 取消原版日月渲染 * 在主世界和轨道维度，我们渲染自己的立体日月 * 通过在 renderSky 方法中太阳/月亮渲染之前取消来阻止原版渲染 😡
      */
     @Inject(
         method = "renderSky",
-        at = @At("HEAD")
+        at = @At(
+            value = "INVOKE",
+            target = "Lcom/mojang/blaze3d/systems/RenderSystem;setShaderTexture(ILnet/minecraft/resources/ResourceLocation;)V"
+        ),
+        cancellable = true,
+        require = 0
     )
-    private void rocketceg$beforeRenderSky(PoseStack poseStack, Matrix4f projectionMatrix, 
-                                          float partialTick, Camera camera, boolean isFoggy, 
-                                          Runnable setupFog, CallbackInfo ci) {
+    private void rocketceg$cancelVanillaSunMoon(PoseStack poseStack, Matrix4f projectionMatrix, 
+                                               float partialTick, Camera camera, boolean isFoggy, 
+                                               Runnable setupFog, CallbackInfo ci) {
         ClientLevel level = Minecraft.getInstance().level;
         if (level == null) return;
         
-        // 😡 在主世界和轨道维度，我们渲染自己的日月，所以需要取消原版的 😡
-        rocketceg$shouldCancelVanillaSunMoon = level.dimension() == Level.OVERWORLD || 
-                                               OrbitalDimensionManager.isOrbitalDimension(level);
+        // 😡 在主世界和轨道维度，取消原版日月渲染 😡
+        if (level.dimension() == Level.OVERWORLD || OrbitalDimensionManager.isOrbitalDimension(level)) {
+            // 😡 取消从这里开始的渲染（包括太阳和月亮） 😡
+            // 😡 我们的自定义日月会在下面的 TAIL 注入中渲染 😡
+            ci.cancel();
+        }
     }
 
     /** 😡 在渲染天空后添加天体渲染 😡

@@ -17,7 +17,6 @@
     "client.MixinClientPacketListener",
     "client.MixinMinecraft",
     "client.MixinLevelRenderer",
-    "client.MixinLevelRendererSunMoon",
     "client.MixinLocalPlayer",
     "client.MixinGameRenderer",
     "client.MixinMultiPlayerGameMode",
