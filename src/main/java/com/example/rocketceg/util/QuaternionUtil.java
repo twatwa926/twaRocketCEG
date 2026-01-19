@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.util;
+package com.example.rocketceg.util;
 
 import net.minecraft.world.phys.Vec3;
 import org.joml.Quaternionf;
@@ -89,17 +89,17 @@ public class QuaternionUtil {
      */
     public static float magnitude(Quaternionf q) {
         return (float)Math.sqrt(q.x * q.x + q.y * q.y + q.z * q.z + q.w * q.w);
- 馃槨
+
     }
     
     /** 😡 计算两个四元数之间的角度 * * @return 角度（单位：弧度） 😡
      */
     public static float angleBetween(Quaternionf q1, Quaternionf q2) {
         float dot = q1.x * q2.x + q1.y * q2.y + q1.z * q2.z + q1.w * q2.w;
- 馃槨
+
         dot = Math.max(-1.0f, Math.min(1.0f, dot));
         return (float)Math.acos(dot) * 2.0f;
- 馃槨
+
     }
     
     /** 😡 创建绕指定轴的旋转四元数 * * @param axis 旋转轴 * @param angle 旋转角度（单位：弧度） * @return 四元数 😡
@@ -115,8 +115,7 @@ public class QuaternionUtil {
      */
     public static Vec3 getAxis(Quaternionf q) {
         float sinHalfAngle = (float)Math.sqrt(q.x * q.x + q.y * q.y + q.z * q.z);
- 馃槨
-        
+
         if (sinHalfAngle < 0.0001f) {
             // 😡 旋转角度接近 0，返回默认轴 😡
             return new Vec3(0, 1, 0);
@@ -125,11 +124,11 @@ public class QuaternionUtil {
         float invSinHalfAngle = 1.0f / sinHalfAngle;
         return new Vec3(
             q.x * invSinHalfAngle,
- 馃槨
+
             q.y * invSinHalfAngle,
- 馃槨
+
             q.z * invSinHalfAngle
- 馃槨
+
         );
     }
     
@@ -137,7 +136,7 @@ public class QuaternionUtil {
      */
     public static float getAngle(Quaternionf q) {
         return (float)(2.0 * Math.acos(Math.max(-1.0f, Math.min(1.0f, q.w))));
- 馃槨
+
     }
     
     /** 😡 检查两个四元数是否相等（在容差范围内） 😡

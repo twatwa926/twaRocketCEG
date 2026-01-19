@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.registry;
+package com.example.rocketceg.registry;
 
 import com.example.rocketceg.RocketCEGMod;
 import com.example.rocketceg.blocks.LaunchPadBlock;

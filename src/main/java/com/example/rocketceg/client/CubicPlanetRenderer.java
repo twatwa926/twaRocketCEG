@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.client;
+package com.example.rocketceg.client;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
@@ -168,7 +168,7 @@ public class CubicPlanetRenderer {
             new Vector3f(0.4f, 0.6f, 1.0f)
         };
         renderCubicPlanet(poseStack, bufferSource, position, size * 1.1f, atmosphereColors);
- 馃槨
+
     }
     
     /** 😡 渲染月球（灰色立方体） 😡
@@ -218,7 +218,7 @@ public class CubicPlanetRenderer {
             new Vector3f(0.9f, 0.5f, 0.3f)
         };
         renderCubicPlanet(poseStack, bufferSource, position, size * 1.08f, atmosphereColors);
- 馃槨
+
     }
     
     /** 😡 渲染金星（黄色立方体） 😡
@@ -249,7 +249,7 @@ public class CubicPlanetRenderer {
             new Vector3f(1.0f, 0.9f, 0.6f)
         };
         renderCubicPlanet(poseStack, bufferSource, position, size * 1.1f, atmosphereColors);
- 馃槨
+
     }
     
     /** 😡 渲染太阳（金黄色立方体） 😡
@@ -273,22 +273,22 @@ public class CubicPlanetRenderer {
         // 😡 光晕（3层） 😡
         for (int i = 1; i <= 3; i++) {
             float glowSize = size * (1.0f + 0.15f * i);
- 馃槨
+
             float alpha = 0.3f / i;
             
             Vector3f[] glowColors = new Vector3f[]{
                 new Vector3f(1.0f * alpha, 0.9f * alpha, 0.3f * alpha),
- 馃槨
+
                 new Vector3f(1.0f * alpha, 0.9f * alpha, 0.3f * alpha),
- 馃槨
+
                 new Vector3f(1.0f * alpha, 0.9f * alpha, 0.3f * alpha),
- 馃槨
+
                 new Vector3f(1.0f * alpha, 0.9f * alpha, 0.3f * alpha),
- 馃槨
+
                 new Vector3f(1.0f * alpha, 0.9f * alpha, 0.3f * alpha),
- 馃槨
+
                 new Vector3f(1.0f * alpha, 0.9f * alpha, 0.3f * alpha)
- 馃槨
+
             };
             renderCubicPlanet(poseStack, bufferSource, position, glowSize, glowColors);
         }

@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.rocket.blueprint;
+package com.example.rocketceg.rocket.blueprint;
 
 import java.util.List;
 
@@ -37,7 +37,7 @@ public class RocketBlueprint {
         final double mf = dryMass;
         if (m0 <= mf || mf <= 0.0D) return 0.0D;
         return averageIsp * g0 * Math.log(m0 / mf);
- 馃槨
+
     }
 }
 

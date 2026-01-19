@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.mixin.client;
+package com.example.rocketceg.mixin.client;
 
 import com.example.rocketceg.dimension.seamless.SeamlessDimensionManager;
 import com.example.rocketceg.dimension.seamless.TransitionEffects;
@@ -54,12 +54,11 @@ public class MixinGameRenderer {
             // 😡 在传送过程中创建 FOV 变化效果 😡
             // 😡 可以创建"穿越"的视觉效果 😡
             float fovMultiplier = 1.0f + (float) Math.sin(progress * Math.PI) * 0.2f;
- 馃槨
-            
+
             // 😡 修改 FOV 值 😡
             double currentFov = cir.getReturnValue();
             cir.setReturnValue(currentFov * fovMultiplier);
- 馃槨
+
         }
     }
 }

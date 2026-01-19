@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.dimension.seamless;
+package com.example.rocketceg.dimension.seamless;
 
 import com.example.rocketceg.RocketCEGMod;
 import com.example.rocketceg.client.RenderUtil;
@@ -161,7 +161,7 @@ public class SpacePlanetRenderer {
         
         // 😡 根据距离计算渲染大小 😡
         float renderSize = (float) (planet.radius / distance * 1000.0);
- 馃槨
+
         renderSize = Math.max(renderSize, 1.0f); // 😡 最小渲染大小 😡
         
         // 😡 渲染星球主体 😡
@@ -170,7 +170,7 @@ public class SpacePlanetRenderer {
         // 😡 渲染大气层（如果有） 😡
         if (planet.hasAtmosphere) {
             renderAtmosphere(poseStack, bufferSource, planet, renderSize * 1.1f);
- 馃槨
+
         }
         
         poseStack.popPose();
@@ -229,7 +229,7 @@ public class SpacePlanetRenderer {
             new Vector3i(0, 0, 0),
             new Quaternionf(),
             new Vector3i((int)(size * 1.1f), (int)(size * 1.1f), (int)(size * 1.1f))
- 馃槨
+
         );
     }
     

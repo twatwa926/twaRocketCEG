@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.rocket.blueprint;
+package com.example.rocketceg.rocket.blueprint;
 
 import com.example.rocketceg.rocket.stage.RocketStage;
 
@@ -114,9 +114,9 @@ public class MultiStageRocketBlueprint {
             }
 
             // 😡 该级的 Δv = Isp * g0 * ln(m0 / mf) 😡
- 馃槨
+
             final double stageDeltaV = averageIsp * g0 * Math.log(currentMass / (currentMass - stage.getFuelMass()));
- 馃槨
+
             totalDeltaV += stageDeltaV;
 
             // 😡 分离后质量减少 😡

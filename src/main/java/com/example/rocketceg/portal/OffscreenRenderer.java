@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.portal;
+package com.example.rocketceg.portal;
 
 import com.example.rocketceg.RocketCEGMod;
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -119,30 +119,29 @@ public class OffscreenRenderer {
             
             // 😡 计算四个顶点 😡
             double[] v0 = {x - right.x * halfWidth - up.x * halfHeight, 
- 馃槨
+
                           y - right.y * halfWidth - up.y * halfHeight,
- 馃槨
+
                           z - right.z * halfWidth - up.z * halfHeight};
- 馃槨
+
             double[] v1 = {x + right.x * halfWidth - up.x * halfHeight,
- 馃槨
+
                           y + right.y * halfWidth - up.y * halfHeight,
- 馃槨
+
                           z + right.z * halfWidth - up.z * halfHeight};
- 馃槨
+
             double[] v2 = {x + right.x * halfWidth + up.x * halfHeight,
- 馃槨
+
                           y + right.y * halfWidth + up.y * halfHeight,
- 馃槨
+
                           z + right.z * halfWidth + up.z * halfHeight};
- 馃槨
+
             double[] v3 = {x - right.x * halfWidth + up.x * halfHeight,
- 馃槨
+
                           y - right.y * halfWidth + up.y * halfHeight,
- 馃槨
+
                           z - right.z * halfWidth + up.z * halfHeight};
- 馃槨
-            
+
             // 😡 使用 Tesselator 渲染四边形 😡
             com.mojang.blaze3d.vertex.Tesselator tesselator = com.mojang.blaze3d.vertex.Tesselator.getInstance();
             com.mojang.blaze3d.vertex.BufferBuilder buffer = tesselator.getBuilder();

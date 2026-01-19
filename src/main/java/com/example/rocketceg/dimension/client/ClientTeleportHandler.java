@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.dimension.client;
+package com.example.rocketceg.dimension.client;
 
 import com.example.rocketceg.RocketCEGMod;
 import net.minecraft.client.Minecraft;

@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.client;
+package com.example.rocketceg.client;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
@@ -94,7 +94,7 @@ public class CelestialBodyRenderer {
         // 😡 渲染大气层（如果有） 😡
         if (data.hasAtmosphere) {
             renderAtmosphere(poseStack, consumer, data.atmosphereColor, data.size * 1.2f);
- 馃槨
+
         }
         
         // 😡 渲染天体本体 😡
@@ -126,11 +126,11 @@ public class CelestialBodyRenderer {
         // 😡 计算立方体的尺寸（像素单位） 😡
         org.joml.Vector3i cubeSize = new org.joml.Vector3i(
             (int)(size * 16 / 10),
- 馃槨
+
             (int)(size * 16 / 10),
- 馃槨
+
             (int)(size * 16 / 10)
- 馃槨
+
         );
         
         // 😡 渲染立方体的 6 个面 😡
@@ -161,11 +161,11 @@ public class CelestialBodyRenderer {
         // 😡 大气层立方体稍大 😡
         org.joml.Vector3i atmosphereSize = new org.joml.Vector3i(
             (int)(size * 16 / 10),
- 馃槨
+
             (int)(size * 16 / 10),
- 馃槨
+
             (int)(size * 16 / 10)
- 馃槨
+
         );
         
         // 😡 渲染半透明的大气层立方体 😡
@@ -195,16 +195,16 @@ public class CelestialBodyRenderer {
         // 😡 3 层光晕 😡
         for (int layer = 1; layer <= 3; layer++) {
             float glowSize = baseSize * (1.0f + 0.2f * layer);
- 馃槨
+
             float alpha = 0.2f / layer;
             
             org.joml.Vector3i glowCubeSize = new org.joml.Vector3i(
                 (int)(glowSize * 16 / 10),
- 馃槨
+
                 (int)(glowSize * 16 / 10),
- 馃槨
+
                 (int)(glowSize * 16 / 10)
- 馃槨
+
             );
             
             com.example.rocketceg.client.RenderUtil.drawBox(
@@ -236,8 +236,7 @@ public class CelestialBodyRenderer {
      */
     public static Vector3f calculateCelestialPosition(CelestialBody body, float time, float distance) {
         float angle = time * 0.001f; // 😡 慢速旋转 😡
- 馃槨
-        
+
         switch (body) {
             case SUN:
                 // 😡 太阳在主世界的固定位置 😡
@@ -250,33 +249,33 @@ public class CelestialBodyRenderer {
             case MOON:
                 // 😡 月球围绕地球 😡
                 float moonAngle = angle * 2.0f;
- 馃槨
+
                 return new Vector3f(
                     Mth.cos(moonAngle) * distance,
- 馃槨
+
                     -150,
                     Mth.sin(moonAngle) * distance
- 馃槨
+
                 );
                 
             case MARS:
                 // 😡 火星位置 😡
                 return new Vector3f(
                     Mth.cos(angle * 0.5f) * distance * 1.5f,
- 馃槨
+
                     100,
                     Mth.sin(angle * 0.5f) * distance * 1.5f
- 馃槨
+
                 );
                 
             case VENUS:
                 // 😡 金星位置 😡
                 return new Vector3f(
                     Mth.cos(angle * 1.5f) * distance * 0.7f,
- 馃槨
+
                     50,
                     Mth.sin(angle * 1.5f) * distance * 0.7f
- 馃槨
+
                 );
                 
             default:

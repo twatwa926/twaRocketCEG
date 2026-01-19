@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.blockentities;
+package com.example.rocketceg.blockentities;
 
 import com.example.rocketceg.blocks.LaunchPadBlock;
 import com.example.rocketceg.registry.RocketCEGBlocks;
@@ -27,14 +27,10 @@ import net.minecraft.world.level.block.state.BlockState;
 public class LaunchPadBlockEntity extends BlockEntity {
 
     /** 😡 扫描火箭的最大高度（从发射台上方开始，以方块为单位） 😡
-     */
- 馃槨 馃槨
-    private static final int SCAN_HEIGHT = 64;
+     */ private static final int SCAN_HEIGHT = 64;
 
     /** 😡 水平扫描半径（方块），1 = 3x3，2 = 5x5 😡
-     */
- 馃槨 馃槨
-    private static final int SCAN_RADIUS = 1;
+     */ private static final int SCAN_RADIUS = 1;
 
     public LaunchPadBlockEntity(BlockPos pos, BlockState state) {
         super(RocketCEGBlockEntities.LAUNCH_PAD_BE.get(), pos, state);
@@ -178,13 +174,13 @@ public class LaunchPadBlockEntity extends BlockEntity {
 
         // 😡 第一级：包含所有发动机和部分燃料箱 😡
         final double stage1DryMass = result.frameCount * 0.5 * 500.0 + // 😡 一半结构 😡
- 馃槨
+
                                      result.engineCount * 3000.0 +
- 馃槨
+
                                      result.engineMountCount * 1500.0;
- 馃槨
+
         final double stage1FuelMass = result.tankCount * 0.6 * 20000.0; // 😡 60% 燃料 😡
- 馃槨
+
         final ResourceLocation engineId = new ResourceLocation("rocketceg", "merlin_1d");
         final int engineCount = result.engineCount;
 
@@ -199,13 +195,12 @@ public class LaunchPadBlockEntity extends BlockEntity {
 
         // 😡 第二级：包含指令舱、航电和剩余燃料 😡
         final double stage2DryMass = result.frameCount * 0.5 * 500.0 + // 😡 另一半结构 😡
- 馃槨
+
                                      result.cockpitCount * 2000.0 +
- 馃槨
+
                                      result.avionicsCount * 800.0;
- 馃槨
+
         final double stage2FuelMass = result.tankCount * 0.4 * 20000.0; // 😡 40% 燃料 😡
- 馃槨
 
         stages.add(new RocketStage(
             2,

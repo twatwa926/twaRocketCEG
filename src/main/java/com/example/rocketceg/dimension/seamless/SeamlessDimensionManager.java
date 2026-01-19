@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.dimension.seamless;
+package com.example.rocketceg.dimension.seamless;
 
 import com.example.rocketceg.RocketCEGMod;
 import net.minecraft.client.Minecraft;
@@ -137,8 +137,7 @@ public class SeamlessDimensionManager {
         
         // 😡 平滑的过渡进度 😡
         transitionProgress += deltaTime * 2.0f; // 😡 0.5秒完成过渡 😡
- 馃槨
-        
+
         if (transitionProgress >= 1.0f) {
             completeTeleport();
         }

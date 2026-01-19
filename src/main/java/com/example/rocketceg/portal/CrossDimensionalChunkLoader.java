@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.portal;
+package com.example.rocketceg.portal;
 
 import com.example.rocketceg.RocketCEGMod;
 import net.minecraft.server.level.ServerLevel;
@@ -91,10 +91,9 @@ public class CrossDimensionalChunkLoader {
                 double dx = (x << 4) - center.x;
                 double dz = (z << 4) - center.z;
                 double distance = Math.sqrt(dx * dx + dz * dz);
- 馃槨
-                
+
                 if (distance <= radius * 16) {
- 馃槨
+
                     chunks.add(new ChunkPos(x, z));
                 }
             }

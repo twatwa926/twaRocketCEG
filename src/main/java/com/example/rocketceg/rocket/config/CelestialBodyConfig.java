@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.rocket.config;
+package com.example.rocketceg.rocket.config;
 
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
@@ -81,7 +81,7 @@ public class CelestialBodyConfig {
             return surfaceGravity;
         }
         return mu / (r * r);
- 馃槨
+
     }
 
     public double gravityAtAltitude(final double altitude) {
@@ -96,7 +96,7 @@ public class CelestialBodyConfig {
             return 0.0D;
         }
         return atmosphereDensity0 * Math.exp(-altitude / scaleHeight);
- 馃槨
+
     }
 }
 

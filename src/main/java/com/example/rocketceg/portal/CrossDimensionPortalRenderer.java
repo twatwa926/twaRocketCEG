@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.portal;
+package com.example.rocketceg.portal;
 
 import com.example.rocketceg.RocketCEGMod;
 import com.mojang.blaze3d.vertex.PoseStack;

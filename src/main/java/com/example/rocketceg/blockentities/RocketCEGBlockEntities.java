@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.blockentities;
+package com.example.rocketceg.blockentities;
 
 import com.example.rocketceg.RocketCEGMod;
 import net.minecraft.world.level.block.entity.BlockEntityType;

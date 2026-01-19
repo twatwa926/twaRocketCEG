@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.client;
+package com.example.rocketceg.client;
 
 import org.joml.Matrix4f;
 import org.joml.Quaternionf;

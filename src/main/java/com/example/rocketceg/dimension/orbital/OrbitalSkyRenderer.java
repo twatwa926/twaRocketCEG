@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.dimension.orbital;
+package com.example.rocketceg.dimension.orbital;
 
 import com.example.rocketceg.client.CubicPlanetRenderer;
 import com.mojang.blaze3d.vertex.PoseStack;
@@ -29,32 +29,28 @@ public class OrbitalSkyRenderer {
      */
     private void generateStarfield() {
         starData = new float[STAR_COUNT * 4];
- 馃槨
-        
+
         for (int i = 0; i < STAR_COUNT; i++) {
             long seed = 12345L + i * 73856093L;
- 馃槨
-            
+
             float theta = (float) ((seed * 2654435761L) % 1000000) / 1000000.0f * Mth.TWO_PI;
- 馃槨
+
             float phi = (float) (((seed >> 16) * 2654435761L) % 1000000) / 1000000.0f * Mth.PI;
- 馃槨
-            
+
             float x = SKY_RADIUS * Mth.sin(phi) * Mth.cos(theta);
- 馃槨
+
             float y = SKY_RADIUS * Mth.cos(phi);
- 馃槨
+
             float z = SKY_RADIUS * Mth.sin(phi) * Mth.sin(theta);
- 馃槨
-            
+
             starData[i * 4] = x;
- 馃槨
+
             starData[i * 4 + 1] = y;
- 馃槨
+
             starData[i * 4 + 2] = z;
- 馃槨
+
             starData[i * 4 + 3] = 0.3f + ((seed >> 8) % 1000) / 1000.0f * 0.7f;
- 馃槨
+
         }
     }
     
@@ -86,37 +82,37 @@ public class OrbitalSkyRenderer {
         
         // 😡 渲染月球（围绕地球） 😡
         float moonAngle = time * 0.002f;
- 馃槨
+
         Vector3f moonPos = new Vector3f(
             Mth.cos(moonAngle) * 150,
- 馃槨
+
             -150,
             Mth.sin(moonAngle) * 150
- 馃槨
+
         );
         CubicPlanetRenderer.renderMoon(poseStack, bufferSource, moonPos, 30.0f);
         
         // 😡 渲染火星（远处） 😡
         float marsAngle = time * 0.001f;
- 馃槨
+
         Vector3f marsPos = new Vector3f(
             Mth.cos(marsAngle) * 400,
- 馃槨
+
             100,
             Mth.sin(marsAngle) * 400
- 馃槨
+
         );
         CubicPlanetRenderer.renderMars(poseStack, bufferSource, marsPos, 50.0f);
         
         // 😡 渲染金星（中距离） 😡
         float venusAngle = time * 0.0015f;
- 馃槨
+
         Vector3f venusPos = new Vector3f(
             Mth.cos(venusAngle) * 300,
- 馃槨
+
             50,
             Mth.sin(venusAngle) * 300
- 馃槨
+
         );
         CubicPlanetRenderer.renderVenus(poseStack, bufferSource, venusPos, 60.0f);
     }
@@ -128,47 +124,41 @@ public class OrbitalSkyRenderer {
         
         for (int ring = 0; ring < SKY_RINGS; ring++) {
             float phi1 = (float) ring / SKY_RINGS * Mth.PI;
- 馃槨
+
             float phi2 = (float) (ring + 1) / SKY_RINGS * Mth.PI;
- 馃槨
-            
+
             Vector3f color1 = getSkyColor((float) ring / SKY_RINGS);
             Vector3f color2 = getSkyColor((float) (ring + 1) / SKY_RINGS);
             
             for (int seg = 0; seg < SKY_SEGMENTS; seg++) {
                 float theta1 = (float) seg / SKY_SEGMENTS * Mth.TWO_PI;
- 馃槨
+
                 float theta2 = (float) (seg + 1) / SKY_SEGMENTS * Mth.TWO_PI;
- 馃槨
-                
+
                 float x1 = SKY_RADIUS * Mth.sin(phi1) * Mth.cos(theta1);
- 馃槨
+
                 float y1 = SKY_RADIUS * Mth.cos(phi1);
- 馃槨
+
                 float z1 = SKY_RADIUS * Mth.sin(phi1) * Mth.sin(theta1);
- 馃槨
-                
+
                 float x2 = SKY_RADIUS * Mth.sin(phi1) * Mth.cos(theta2);
- 馃槨
+
                 float y2 = SKY_RADIUS * Mth.cos(phi1);
- 馃槨
+
                 float z2 = SKY_RADIUS * Mth.sin(phi1) * Mth.sin(theta2);
- 馃槨
-                
+
                 float x3 = SKY_RADIUS * Mth.sin(phi2) * Mth.cos(theta2);
- 馃槨
+
                 float y3 = SKY_RADIUS * Mth.cos(phi2);
- 馃槨
+
                 float z3 = SKY_RADIUS * Mth.sin(phi2) * Mth.sin(theta2);
- 馃槨
-                
+
                 float x4 = SKY_RADIUS * Mth.sin(phi2) * Mth.cos(theta1);
- 馃槨
+
                 float y4 = SKY_RADIUS * Mth.cos(phi2);
- 馃槨
+
                 float z4 = SKY_RADIUS * Mth.sin(phi2) * Mth.sin(theta1);
- 馃槨
-                
+
                 consumer.vertex(matrix, x1, y1, z1).color(color1.x(), color1.y(), color1.z(), 1.0f).endVertex();
                 consumer.vertex(matrix, x2, y2, z2).color(color1.x(), color1.y(), color1.z(), 1.0f).endVertex();
                 consumer.vertex(matrix, x3, y3, z3).color(color2.x(), color2.y(), color2.z(), 1.0f).endVertex();
@@ -182,14 +172,14 @@ public class OrbitalSkyRenderer {
     private Vector3f getSkyColor(float height) {
         if (height < 0.5f) {
             float t = height * 2.0f;
- 馃槨
+
             float r = Mth.lerp(t, 0.5f, 0.1f);
             float g = Mth.lerp(t, 0.7f, 0.2f);
             float b = Mth.lerp(t, 1.0f, 0.5f);
             return new Vector3f(r, g, b);
         } else {
             float t = (height - 0.5f) * 2.0f;
- 馃槨
+
             float r = Mth.lerp(t, 0.1f, 0.0f);
             float g = Mth.lerp(t, 0.2f, 0.0f);
             float b = Mth.lerp(t, 0.5f, 0.0f);
@@ -204,22 +194,21 @@ public class OrbitalSkyRenderer {
         
         for (int i = 0; i < STAR_COUNT; i++) {
             float x = starData[i * 4];
- 馃槨
+
             float y = starData[i * 4 + 1];
- 馃槨
+
             float z = starData[i * 4 + 2];
- 馃槨
+
             float brightness = starData[i * 4 + 3];
- 馃槨
-            
+
             float r = 0.8f + brightness * 0.2f;
- 馃槨
+
             float g = 0.9f + brightness * 0.1f;
- 馃槨
+
             float b = 1.0f;
             
             float size = 0.5f + brightness * 1.5f;
- 馃槨
+
             float half = size / 2.0f;
             
             consumer.vertex(matrix, x - half, y - half, z).color(r, g, b, brightness).endVertex();

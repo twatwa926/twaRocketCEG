@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.client;
+package com.example.rocketceg.client;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
@@ -33,14 +33,12 @@ public class SphericalCelestialRenderer {
         // 😡 渲染经线 😡
         for (int seg = 0; seg < segments; seg++) {
             float theta = (float) seg / segments * Mth.TWO_PI;
- 馃槨
-            
+
             for (int ring = 0; ring < rings; ring++) {
                 float phi1 = (float) ring / rings * Mth.PI;
- 馃槨
+
                 float phi2 = (float) (ring + 1) / rings * Mth.PI;
- 馃槨
-                
+
                 // 😡 计算两个点的位置 😡
                 Vector3f p1 = sphericalToCartesian(radius, theta, phi1);
                 Vector3f p2 = sphericalToCartesian(radius, theta, phi2);
@@ -60,14 +58,12 @@ public class SphericalCelestialRenderer {
         // 😡 渲染纬线 😡
         for (int ring = 1; ring < rings; ring++) {
             float phi = (float) ring / rings * Mth.PI;
- 馃槨
-            
+
             for (int seg = 0; seg < segments; seg++) {
                 float theta1 = (float) seg / segments * Mth.TWO_PI;
- 馃槨
+
                 float theta2 = (float) (seg + 1) / segments * Mth.TWO_PI;
- 馃槨
-                
+
                 // 😡 计算两个点的位置 😡
                 Vector3f p1 = sphericalToCartesian(radius, theta1, phi);
                 Vector3f p2 = sphericalToCartesian(radius, theta2, phi);
@@ -91,11 +87,11 @@ public class SphericalCelestialRenderer {
      */
     private static Vector3f sphericalToCartesian(float r, float theta, float phi) {
         float x = r * Mth.sin(phi) * Mth.cos(theta);
- 馃槨
+
         float y = r * Mth.cos(phi);
- 馃槨
+
         float z = r * Mth.sin(phi) * Mth.sin(theta);
- 馃槨
+
         return new Vector3f(x, y, z);
     }
     
@@ -116,6 +112,6 @@ public class SphericalCelestialRenderer {
         
         // 😡 渲染大气层（稍大一点） 😡
         renderSphere(poseStack, bufferSource, position, atmosphereColor, radius * 1.1f, segments / 2, rings / 2);
- 馃槨
+
     }
 }

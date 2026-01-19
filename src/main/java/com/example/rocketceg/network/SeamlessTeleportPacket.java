@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.network;
+package com.example.rocketceg.network;
 
 import com.example.rocketceg.dimension.seamless.SeamlessDimensionManager;
 import net.minecraft.network.FriendlyByteBuf;

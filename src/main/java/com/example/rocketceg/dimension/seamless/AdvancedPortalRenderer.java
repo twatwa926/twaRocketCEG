@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.dimension.seamless;
+package com.example.rocketceg.dimension.seamless;
 
 import com.example.rocketceg.RocketCEGMod;
 import com.example.rocketceg.seamless.SeamlessCore;
@@ -351,7 +351,7 @@ public class AdvancedPortalRenderer {
             if (lastFrameTime > 0) {
                 double currentFPS = 1_000_000_000.0 / lastFrameTime;
                 averageFPS = averageFPS * 0.9 + currentFPS * 0.1; // 😡 平滑处理 😡
- 馃槨
+
             }
             
             // 😡 获取内存信息 😡
@@ -498,12 +498,12 @@ public class AdvancedPortalRenderer {
         long totalMemory = Runtime.getRuntime().totalMemory();
         
         if (totalMemory < 2L * 1024 * 1024 * 1024) { // 😡 小于2GB 😡
- 馃槨
+
             maxRenderDistance = 12;
             indirectLoadingRadiusCap = 6;
             renderQuality = 0.7f;
         } else if (totalMemory < 4L * 1024 * 1024 * 1024) { // 😡 小于4GB 😡
- 馃槨
+
             maxRenderDistance = 16;
             indirectLoadingRadiusCap = 8;
             renderQuality = 0.8f;

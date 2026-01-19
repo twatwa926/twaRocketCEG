@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.mixin.client;
+package com.example.rocketceg.mixin.client;
 
 import com.example.rocketceg.dimension.seamless.SeamlessDimensionManager;
 import com.example.rocketceg.dimension.seamless.SpacePlanetRenderer;

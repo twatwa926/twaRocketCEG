@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.client;
+package com.example.rocketceg.client;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.Minecraft;

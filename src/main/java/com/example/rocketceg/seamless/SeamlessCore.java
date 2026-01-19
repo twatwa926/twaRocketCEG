@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.seamless;
+package com.example.rocketceg.seamless;
 
 import com.example.rocketceg.RocketCEGMod;
 import net.minecraft.client.Minecraft;

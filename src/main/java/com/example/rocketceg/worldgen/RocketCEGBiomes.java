@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.worldgen;
+package com.example.rocketceg.worldgen;
 
 import com.example.rocketceg.RocketCEGMod;
 import net.minecraft.core.HolderGetter;

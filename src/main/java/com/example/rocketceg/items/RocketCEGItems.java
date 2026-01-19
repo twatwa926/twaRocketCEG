@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.items;
+package com.example.rocketceg.items;
 
 import com.example.rocketceg.RocketCEGMod;
 import net.minecraft.world.item.Item;

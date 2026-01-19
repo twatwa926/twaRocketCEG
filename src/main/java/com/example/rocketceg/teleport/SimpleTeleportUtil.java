@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.teleport;
+package com.example.rocketceg.teleport;
 
 import com.example.rocketceg.RocketCEGMod;
 import net.minecraft.server.level.ServerLevel;

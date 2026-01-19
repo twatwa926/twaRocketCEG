@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.portal;
+package com.example.rocketceg.portal;
 
 import com.example.rocketceg.RocketCEGMod;
 import com.example.rocketceg.util.QuaternionUtil;
@@ -65,7 +65,7 @@ public class CameraTransformer {
             
             // 😡 2. 应用传送门旋转变换 😡
             // 😡 目标旋转 = 目标传送门旋转 * 原始旋转 * 源传送门反向旋转 😡
- 馃槨
+
             Quaternionf sourceInverse = QuaternionUtil.conjugate(portal.getRotation());
             Quaternionf targetRotation = portal.getTargetRotation();
             

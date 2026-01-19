@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.dimension.seamless;
+package com.example.rocketceg.dimension.seamless;
 
 import com.example.rocketceg.RocketCEGMod;
 import com.example.rocketceg.seamless.SeamlessCore;

@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.portal;
+package com.example.rocketceg.portal;
 
 import com.example.rocketceg.RocketCEGMod;
 import net.minecraft.resources.ResourceKey;

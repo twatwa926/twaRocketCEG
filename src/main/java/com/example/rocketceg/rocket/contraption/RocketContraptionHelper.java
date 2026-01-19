@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.rocket.contraption;
+package com.example.rocketceg.rocket.contraption;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
@@ -78,7 +78,7 @@ public class RocketContraptionHelper {
         // 😡 TODO: 根据 Create 的 API 创建 ContraptionEntity 😡
         // 😡 示例代码（需要根据实际 API 调整）： 😡
         /* try {
- 馃槨
+
             Class<?> contraptionClass = Class.forName("com.simibubi.create.content.contraptions.Contraption");
             Class<?> contraptionEntityClass = Class.forName("com.simibubi.create.content.contraptions.ContraptionEntity");
             

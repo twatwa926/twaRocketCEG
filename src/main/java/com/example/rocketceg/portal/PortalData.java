@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.portal;
+package com.example.rocketceg.portal;
 
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.Level;

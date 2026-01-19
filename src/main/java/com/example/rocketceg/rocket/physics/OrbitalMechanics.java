@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.rocket.physics;
+package com.example.rocketceg.rocket.physics;
 
 import com.example.rocketceg.rocket.config.CelestialBodyConfig;
 import org.joml.Vector3d;
@@ -51,7 +51,6 @@ public class OrbitalMechanics {
 
         // 😡 比轨道能量：ε = v²/2 - μ/r 😡
         final double specificEnergy = (v * v) / 2.0 - mu / r;
- 馃槨
 
         // 😡 如果能量 >= 0，是双曲线或抛物线轨道（逃逸轨道），这里只处理椭圆轨道 😡
         if (specificEnergy >= 0.0) {
@@ -60,7 +59,6 @@ public class OrbitalMechanics {
 
         // 😡 半长轴：a = -μ / (2ε) 😡
         final double semiMajorAxis = -mu / (2.0 * specificEnergy);
- 馃槨
 
         // 😡 比角动量：h = r × v 😡
         final Vector3d angularMomentum = new Vector3d(position).cross(velocity);
@@ -68,20 +66,18 @@ public class OrbitalMechanics {
 
         // 😡 偏心率：e = sqrt(1 + 2εh²/μ²) 😡
         final double eccentricity = Math.sqrt(1.0 + 2.0 * specificEnergy * h * h / (mu * mu));
- 馃槨
 
         // 😡 近地点和远地点 😡
         final double periapsisDistance = semiMajorAxis * (1.0 - eccentricity);
- 馃槨
+
         final double apoapsisDistance = semiMajorAxis * (1.0 + eccentricity);
- 馃槨
+
         final double periapsis = periapsisDistance - body.getRadius();
         final double apoapsis = apoapsisDistance - body.getRadius();
 
         // 😡 轨道周期：T = 2π * sqrt(a³/μ) 😡
- 馃槨
+
         final double period = 2.0 * Math.PI * Math.sqrt(semiMajorAxis * semiMajorAxis * semiMajorAxis / mu);
- 馃槨
 
         // 😡 当前轨道速度（圆形轨道近似）：v = sqrt(μ/r) 😡
         final double orbitalVelocity = Math.sqrt(mu / r);
@@ -110,7 +106,7 @@ public class OrbitalMechanics {
         final double r = body.getRadius() + altitude;
         final double mu = body.getMu();
         return Math.sqrt(2.0 * mu / r);
- 馃槨
+
     }
 
     /** 😡 检查是否在轨道上（速度足够且能量为负） * @param position 位置 * @param velocity 速度 * @param body 行星配置 * @return 是否在轨道上 😡
@@ -125,7 +121,7 @@ public class OrbitalMechanics {
         }
 
         final double specificEnergy = (v * v) / 2.0 - mu / r;
- 馃槨
+
         return specificEnergy < 0.0; // 😡 椭圆轨道 😡
     }
 }

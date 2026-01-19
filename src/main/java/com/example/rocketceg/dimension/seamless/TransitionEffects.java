@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.dimension.seamless;
+package com.example.rocketceg.dimension.seamless;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.*;
@@ -22,11 +22,11 @@ public class TransitionEffects {
         if (progress < 0.5f) {
             // 😡 前半段：淡出效果 😡
             renderFadeOut(progress * 2.0f, screenWidth, screenHeight);
- 馃槨
+
         } else {
             // 😡 后半段：淡入效果 😡
             renderFadeIn((progress - 0.5f) * 2.0f, screenWidth, screenHeight);
- 馃槨
+
         }
         
         // 😡 添加粒子效果 😡
@@ -48,8 +48,7 @@ public class TransitionEffects {
         
         // 😡 创建渐变的黑色覆盖层 😡
         float alpha = progress * 0.8f; // 😡 最大透明度 80% 😡
- 馃槨
-        
+
         buffer.begin(VertexFormat.Mode.QUADS, DefaultVertexFormat.POSITION_COLOR);
         Matrix4f matrix = new Matrix4f().identity();
         
@@ -75,8 +74,7 @@ public class TransitionEffects {
         
         // 😡 创建渐变的蓝色覆盖层（太空色彩） 😡
         float alpha = (1.0f - progress) * 0.6f;
- 馃槨
-        
+
         buffer.begin(VertexFormat.Mode.QUADS, DefaultVertexFormat.POSITION_COLOR);
         Matrix4f matrix = new Matrix4f().identity();
         
@@ -105,20 +103,17 @@ public class TransitionEffects {
         
         // 😡 渲染星星粒子效果 😡
         int particleCount = (int) (progress * 50); // 😡 最多50个粒子 😡
- 馃槨
-        
+
         for (int i = 0; i < particleCount; i++) {
             // 😡 使用伪随机位置 😡
             float x = (float) ((i * 73 + progress * 100) % screenWidth);
- 馃槨
+
             float y = (float) ((i * 37 + progress * 80) % screenHeight);
- 馃槨
+
             float size = 2.0f + (float) Math.sin(progress * Math.PI + i) * 1.0f;
- 馃槨
-            
+
             float alpha = (float) Math.sin(progress * Math.PI) * 0.8f;
- 馃槨
-            
+
             // 😡 渲染小方块作为星星 😡
             buffer.vertex(matrix, x, y + size, 0).color(1.0f, 1.0f, 1.0f, alpha).endVertex();
             buffer.vertex(matrix, x + size, y + size, 0).color(1.0f, 1.0f, 1.0f, alpha).endVertex();
@@ -136,8 +131,7 @@ public class TransitionEffects {
         // 😡 在传送的中间阶段创建扭曲效果 😡
         if (progress > 0.3f && progress < 0.7f) {
             float warpIntensity = (float) Math.sin((progress - 0.3f) / 0.4f * Math.PI) * 0.1f;
- 馃槨
-            
+
             // 😡 这里可以添加屏幕扭曲效果 😡
             // 😡 由于复杂性，暂时使用简单的视觉提示 😡
             
@@ -157,8 +151,7 @@ public class TransitionEffects {
             int radius = Math.min(screenWidth, screenHeight) / 4;
             
             float alpha = warpIntensity * 0.5f;
- 馃槨
-            
+
             // 😡 简化的径向效果 😡
             buffer.vertex(matrix, centerX - radius, centerY + radius, 0).color(0.5f, 0.8f, 1.0f, 0).endVertex();
             buffer.vertex(matrix, centerX + radius, centerY + radius, 0).color(0.5f, 0.8f, 1.0f, 0).endVertex();

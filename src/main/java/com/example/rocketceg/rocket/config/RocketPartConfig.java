@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.rocket.config;
+package com.example.rocketceg.rocket.config;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;

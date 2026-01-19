@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.rocket.stage;
+package com.example.rocketceg.rocket.stage;
 
 import com.example.rocketceg.rocket.config.RocketEngineDefinition;
 import com.example.rocketceg.rocket.registry.RocketConfigRegistry;
@@ -99,12 +99,11 @@ public class RocketStage {
         // 😡 根据高度插值：在大气层内使用海平面推力，大气层外使用真空推力 😡
         final double atmosphereRatio = Math.max(0.0, Math.min(1.0, altitude / atmosphereTop));
         final double thrustPerEngine = engineDef.getThrustSeaLevel() * (1.0 - atmosphereRatio) +
- 馃槨
+
                                       engineDef.getThrustVacuum() * atmosphereRatio;
- 馃槨
 
         return thrustPerEngine * engineCount;
- 馃槨
+
     }
 
     /** 😡 消耗燃料（每 tick 调用） * @param dt 时间步长（秒） * @param g0 重力加速度（用于计算 Isp） * @return 实际消耗的燃料质量（kg） 😡
@@ -123,14 +122,13 @@ public class RocketStage {
         final double avgIsp = (engineDef.getIspSeaLevel() + engineDef.getIspVacuum()) / 2.0;
         final double thrustPerEngine = (engineDef.getThrustSeaLevel() + engineDef.getThrustVacuum()) / 2.0;
         final double totalThrust = thrustPerEngine * engineCount;
- 馃槨
 
         // 😡 燃料消耗率：mdot = T / (Isp * g0) 😡
- 馃槨
+
         final double mdot = totalThrust / (avgIsp * g0);
- 馃槨
+
         final double consumed = Math.min(mdot * dt, fuelMass);
- 馃槨
+
         fuelMass -= consumed;
 
         return consumed;

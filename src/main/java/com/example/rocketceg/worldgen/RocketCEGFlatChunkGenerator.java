@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.worldgen;
+package com.example.rocketceg.worldgen;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;

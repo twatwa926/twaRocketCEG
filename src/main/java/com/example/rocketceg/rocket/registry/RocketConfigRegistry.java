@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.rocket.registry;
+package com.example.rocketceg.rocket.registry;
 
 import com.example.rocketceg.RocketCEGMod;
 import com.example.rocketceg.dimension.RocketCEGDimensions;

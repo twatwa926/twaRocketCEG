@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.dimension.seamless;
+package com.example.rocketceg.dimension.seamless;
 
 import com.example.rocketceg.RocketCEGMod;
 import net.minecraft.server.level.ServerLevel;
@@ -73,9 +73,9 @@ public class IntelligentChunkLoader {
         
         public double getDistanceToCenter() {
             double chunkCenterX = chunkPos.x * 16.0 + 8.0;
- 馃槨
+
             double chunkCenterZ = chunkPos.z * 16.0 + 8.0;
- 馃槨
+
             return Math.sqrt(Math.pow(chunkCenterX - loadCenter.x, 2) + 
                            Math.pow(chunkCenterZ - loadCenter.z, 2));
         }
@@ -356,9 +356,9 @@ public class IntelligentChunkLoader {
      */
     private int calculateChunkPriority(ChunkPos chunkPos, Vec3 center) {
         double chunkCenterX = chunkPos.x * 16.0 + 8.0;
- 馃槨
+
         double chunkCenterZ = chunkPos.z * 16.0 + 8.0;
- 馃槨
+
         double distance = Math.sqrt(Math.pow(chunkCenterX - center.x, 2) + 
                                   Math.pow(chunkCenterZ - center.z, 2));
         
@@ -386,8 +386,7 @@ public class IntelligentChunkLoader {
             if (memoryUsage > 0.8) { // 😡 内存使用超过80% 😡
                 LOGGER.debug("[IntelligentChunkLoader] 内存使用率高 ({}%), 开始清理区块", 
                             (int)(memoryUsage * 100));
- 馃槨
-                
+
                 // 😡 卸载长时间未访问的区块 😡
                 for (Map.Entry<ResourceKey<Level>, Map<ChunkPos, ChunkLoadContext>> dimEntry : chunkContexts.entrySet()) {
                     ResourceKey<Level> dimension = dimEntry.getKey();
@@ -439,12 +438,12 @@ public class IntelligentChunkLoader {
             // 😡 根据性能调整加载参数 😡
             int totalChunks = getTotalLoadedChunks();
             if (totalChunks > maxCrossDimensionalChunks * 0.9) {
- 馃槨
+
                 // 😡 接近限制，减少加载半径 😡
                 chunkLoadingRadius = Math.max(4, chunkLoadingRadius - 1);
                 LOGGER.debug("[IntelligentChunkLoader] 优化：减少区块加载半径到 {}", chunkLoadingRadius);
             } else if (totalChunks < maxCrossDimensionalChunks * 0.5) {
- 馃槨
+
                 // 😡 远低于限制，可以增加加载半径 😡
                 chunkLoadingRadius = Math.min(indirectLoadingRadiusCap, chunkLoadingRadius + 1);
                 LOGGER.debug("[IntelligentChunkLoader] 优化：增加区块加载半径到 {}", chunkLoadingRadius);

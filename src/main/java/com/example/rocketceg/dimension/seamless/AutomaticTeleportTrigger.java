@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.dimension.seamless;
+package com.example.rocketceg.dimension.seamless;
 
 import com.example.rocketceg.RocketCEGMod;
 import com.example.rocketceg.dimension.DimensionTeleporter;
@@ -139,7 +139,7 @@ public class AutomaticTeleportTrigger {
             long currentTime = System.currentTimeMillis();
             playerCooldowns.entrySet().removeIf(entry -> 
                 currentTime - entry.getValue() > COOLDOWN_TIME * 2
- 馃槨
+
             );
         }
     }

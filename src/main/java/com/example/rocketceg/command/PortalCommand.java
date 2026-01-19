@@ -1,4 +1,4 @@
-ackage com.example.rocketceg.command;
+package com.example.rocketceg.command;
 
 import com.example.rocketceg.portal.PortalManager;
 import com.example.rocketceg.portal.Portal;
