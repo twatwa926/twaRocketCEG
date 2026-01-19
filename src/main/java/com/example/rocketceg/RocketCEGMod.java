@@ -1,4 +1,4 @@
-﻿package com.example.rocketceg;
+ackage com.example.rocketceg;
 
 import com.example.rocketceg.blockentities.RocketCEGBlockEntities;
 import com.example.rocketceg.command.SeamlessTeleportCommand;

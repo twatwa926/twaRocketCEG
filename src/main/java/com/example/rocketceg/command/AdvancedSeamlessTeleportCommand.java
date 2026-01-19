@@ -1,4 +1,4 @@
-﻿package com.example.rocketceg.command;
+ackage com.example.rocketceg.command;
 
 import com.example.rocketceg.RocketCEGMod;
 import com.example.rocketceg.seamless.SeamlessCore;

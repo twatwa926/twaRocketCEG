@@ -1,4 +1,4 @@
-﻿package com.example.rocketceg.rocket.config;
+ackage com.example.rocketceg.rocket.config;
 
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;

@@ -1,4 +1,4 @@
-﻿package com.example.rocketceg.util;
+ackage com.example.rocketceg.util;
 
 import com.example.rocketceg.RocketCEGMod;
 import net.minecraft.network.protocol.game.*;

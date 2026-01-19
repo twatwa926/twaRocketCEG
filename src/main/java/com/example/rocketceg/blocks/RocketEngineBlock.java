@@ -1,4 +1,4 @@
-﻿package com.example.rocketceg.blocks;
+ackage com.example.rocketceg.blocks;
 
 import com.example.rocketceg.blockentities.RocketEngineBlockEntity;
 import net.minecraft.core.BlockPos;

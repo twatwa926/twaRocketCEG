@@ -1,4 +1,4 @@
-﻿package com.example.rocketceg.dimension;
+ackage com.example.rocketceg.dimension;
 
 import com.example.rocketceg.RocketCEGMod;
 import net.minecraft.core.BlockPos;

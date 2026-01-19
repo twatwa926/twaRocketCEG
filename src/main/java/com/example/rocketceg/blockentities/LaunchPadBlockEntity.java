@@ -1,4 +1,4 @@
-﻿package com.example.rocketceg.blockentities;
+ackage com.example.rocketceg.blockentities;
 
 import com.example.rocketceg.blocks.LaunchPadBlock;
 import com.example.rocketceg.registry.RocketCEGBlocks;

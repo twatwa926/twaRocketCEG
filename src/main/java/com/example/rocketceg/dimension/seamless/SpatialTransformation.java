@@ -1,4 +1,4 @@
-﻿package com.example.rocketceg.dimension.seamless;
+ackage com.example.rocketceg.dimension.seamless;
 
 import com.example.rocketceg.RocketCEGMod;
 import net.minecraft.world.phys.Vec3;

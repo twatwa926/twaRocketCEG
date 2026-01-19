@@ -1,4 +1,4 @@
-﻿package com.example.rocketceg.mixin.client;
+ackage com.example.rocketceg.mixin.client;
 
 import com.example.rocketceg.dimension.seamless.SeamlessDimensionManager;
 import com.example.rocketceg.seamless.SeamlessCore;

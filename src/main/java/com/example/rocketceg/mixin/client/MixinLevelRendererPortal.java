@@ -1,4 +1,4 @@
-﻿package com.example.rocketceg.mixin.client;
+ackage com.example.rocketceg.mixin.client;
 
 import com.example.rocketceg.portal.CrossDimensionPortalRenderer;
 import com.mojang.blaze3d.vertex.PoseStack;

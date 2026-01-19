@@ -1,4 +1,4 @@
-﻿package com.example.rocketceg.rocket.contraption;
+ackage com.example.rocketceg.rocket.contraption;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;

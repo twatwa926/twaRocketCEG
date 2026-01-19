@@ -1,4 +1,4 @@
-﻿package com.example.rocketceg.mixin.server;
+ackage com.example.rocketceg.mixin.server;
 
 import com.example.rocketceg.dimension.seamless.IntelligentChunkLoader;
 import com.example.rocketceg.seamless.SeamlessCore;

@@ -1,4 +1,4 @@
-﻿package com.example.rocketceg.rocket.entity;
+ackage com.example.rocketceg.rocket.entity;
 
 import com.example.rocketceg.registry.RocketCEGEntities;
 import com.example.rocketceg.rocket.blueprint.MultiStageRocketBlueprint;

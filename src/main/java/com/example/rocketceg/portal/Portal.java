@@ -1,4 +1,4 @@
-﻿package com.example.rocketceg.portal;
+ackage com.example.rocketceg.portal;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.resources.ResourceKey;

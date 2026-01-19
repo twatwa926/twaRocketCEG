@@ -1,4 +1,4 @@
-﻿package com.example.rocketceg.items;
+ackage com.example.rocketceg.items;
 
 import com.example.rocketceg.RocketCEGMod;
 import com.example.rocketceg.registry.RocketCEGBlocks;

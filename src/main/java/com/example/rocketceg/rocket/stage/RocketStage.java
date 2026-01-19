@@ -1,4 +1,4 @@
-﻿package com.example.rocketceg.rocket.stage;
+ackage com.example.rocketceg.rocket.stage;
 
 import com.example.rocketceg.rocket.config.RocketEngineDefinition;
 import com.example.rocketceg.rocket.registry.RocketConfigRegistry;

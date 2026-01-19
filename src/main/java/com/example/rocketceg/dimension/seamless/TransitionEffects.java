@@ -1,4 +1,4 @@
-﻿package com.example.rocketceg.dimension.seamless;
+ackage com.example.rocketceg.dimension.seamless;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.*;

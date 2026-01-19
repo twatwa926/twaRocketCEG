@@ -1,4 +1,4 @@
-﻿package com.example.rocketceg.rocket.physics;
+ackage com.example.rocketceg.rocket.physics;
 
 import com.example.rocketceg.rocket.config.CelestialBodyConfig;
 import org.joml.Vector3d;

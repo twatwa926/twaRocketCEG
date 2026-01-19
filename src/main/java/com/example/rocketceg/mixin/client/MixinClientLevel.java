@@ -1,4 +1,4 @@
-﻿package com.example.rocketceg.mixin.client;
+ackage com.example.rocketceg.mixin.client;
 
 import com.example.rocketceg.seamless.SeamlessCore;
 import net.minecraft.client.multiplayer.ClientLevel;

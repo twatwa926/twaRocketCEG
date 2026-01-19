@@ -1,4 +1,4 @@
-﻿package com.example.rocketceg.commands;
+ackage com.example.rocketceg.commands;
 
 import com.example.rocketceg.RocketCEGMod;
 import com.example.rocketceg.dimension.DimensionTeleporter;

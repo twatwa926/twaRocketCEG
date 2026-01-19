@@ -1,4 +1,4 @@
-﻿package com.example.rocketceg.client;
+ackage com.example.rocketceg.client;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;

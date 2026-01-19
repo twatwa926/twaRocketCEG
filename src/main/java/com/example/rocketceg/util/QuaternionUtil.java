@@ -1,4 +1,4 @@
-﻿package com.example.rocketceg.util;
+ackage com.example.rocketceg.util;
 
 import net.minecraft.world.phys.Vec3;
 import org.joml.Quaternionf;
