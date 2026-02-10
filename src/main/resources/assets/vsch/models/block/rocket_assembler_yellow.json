@@ -1,6 +1,0 @@
-{
-	"parent": "vsch:block/rocket_assembler",
-	"textures": {
-		"side": "vsch:block/rocket_assembler_side_yellow"
-	}
-}

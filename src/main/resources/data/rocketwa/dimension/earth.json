@@ -1,0 +1,1 @@
+{"type":"minecraft:overworld","generator":{"type":"minecraft:flat","settings":{"layers":[{"height":1,"block":"minecraft:bedrock"},{"height":2,"block":"minecraft:stone"},{"height":58,"block":"minecraft:dirt"},{"height":3,"block":"minecraft:grass_block"}],"biome":"minecraft:the_void"}}}

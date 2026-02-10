@@ -1,0 +1,14 @@
+# 天空盒占位材质说明 (MCR DimensionSpecialEffects)
+# 替换以下材质即可更改各维度天空外观（保持文件名一致）。
+
+rocket_sky.png          - 默认星球/轨道维度天空（当前所有 rocketwa:planet 维度共用）
+sky_earth.png           - 地球专属天空（可选，未提供则用 rocket_sky.png）
+sky_moon.png            - 月球专属天空（可选）
+sky_sun.png             - 太阳专属天空（可选）
+sky_mars.png            - 火星专属天空（可选）
+sky_mercury.png         - 水星专属天空（可选）
+sky_venus.png           - 金星专属天空（可选）
+sky_earth_orbit.png     - 地球轨道专属天空（可选）
+sky_ceres.png / sky_jupiter.png / sky_saturn.png / sky_uranus.png / sky_neptune.png / sky_pluto.png - 同上
+
+在 PlanetDimensionEffects 中可按 level.dimension().location().getPath() 选择对应 sky_<dim>.png。

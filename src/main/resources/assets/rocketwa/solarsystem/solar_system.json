@@ -1,0 +1,17 @@
+{
+  "name": "Solar System",
+  "bodies": [
+    {"name": "Sun", "orbitDistance": 0, "orbitPeriodDays": 0, "radiusMeters": 696000000, "orbitSemiMajorAxisMeters": 0, "inclinationDeg": 0, "color": 16766720, "gravity": 274.0},
+    {"name": "Mercury", "orbitDistance": 18, "orbitPeriodDays": 88, "radiusMeters": 2439700, "orbitSemiMajorAxisMeters": 57.9e9, "inclinationDeg": 7.0, "color": 13421772, "gravity": 3.7},
+    {"name": "Venus", "orbitDistance": 26, "orbitPeriodDays": 225, "radiusMeters": 6051800, "orbitSemiMajorAxisMeters": 108.2e9, "inclinationDeg": 3.4, "color": 16047872, "gravity": 8.87},
+    {"name": "Earth", "orbitDistance": 36, "orbitPeriodDays": 365, "radiusMeters": 6371000, "orbitSemiMajorAxisMeters": 149.6e9, "inclinationDeg": 0, "color": 4105216, "gravity": 9.81},
+    {"name": "Moon", "orbitDistance": 38, "orbitPeriodDays": 27.3, "radiusMeters": 1737400, "orbitSemiMajorAxisMeters": 384400000, "inclinationDeg": 5.1, "color": 13882332, "gravity": 1.62},
+    {"name": "Mars", "orbitDistance": 50, "orbitPeriodDays": 687, "radiusMeters": 3389500, "orbitSemiMajorAxisMeters": 228e9, "inclinationDeg": 1.9, "color": 13690962, "gravity": 3.71},
+    {"name": "Ceres", "orbitDistance": 72, "orbitPeriodDays": 1680, "radiusMeters": 469730, "orbitSemiMajorAxisMeters": 413.7e9, "inclinationDeg": 10.6, "color": 10066329, "gravity": 0.28},
+    {"name": "Jupiter", "orbitDistance": 95, "orbitPeriodDays": 4333, "radiusMeters": 69911000, "orbitSemiMajorAxisMeters": 778.5e9, "inclinationDeg": 1.3, "color": 16761035, "gravity": 24.79},
+    {"name": "Saturn", "orbitDistance": 135, "orbitPeriodDays": 10759, "radiusMeters": 58232000, "orbitSemiMajorAxisMeters": 1434e9, "inclinationDeg": 2.5, "color": 16763955, "gravity": 10.44},
+    {"name": "Uranus", "orbitDistance": 170, "orbitPeriodDays": 30688, "radiusMeters": 25362000, "orbitSemiMajorAxisMeters": 2871e9, "inclinationDeg": 0.8, "color": 10079487, "gravity": 8.69},
+    {"name": "Neptune", "orbitDistance": 195, "orbitPeriodDays": 60182, "radiusMeters": 24622000, "orbitSemiMajorAxisMeters": 4495e9, "inclinationDeg": 1.8, "color": 3447003, "gravity": 11.15},
+    {"name": "Pluto", "orbitDistance": 215, "orbitPeriodDays": 90560, "radiusMeters": 1188300, "orbitSemiMajorAxisMeters": 5906e9, "inclinationDeg": 17.2, "color": 10066329, "gravity": 0.62}
+  ]
+}

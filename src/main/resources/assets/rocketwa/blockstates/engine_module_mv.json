@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "rocketwa:block/engine_module_mv"
+    }
+  }
+}

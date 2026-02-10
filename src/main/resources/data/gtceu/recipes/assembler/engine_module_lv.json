@@ -1,0 +1,20 @@
+{
+  "type": "gtceu:assembler",
+  "conditions": [
+    { "type": "forge:mod_loaded", "modid": "gtceu" }
+  ],
+  "duration": 220,
+  "eu": 30,
+  "inputs": {
+    "items": [
+      { "item": "rocketwa:rocket_alloy_ingot", "count": 2 },
+      { "tag": "gtceu:dusts/redstone", "count": 2 },
+      { "tag": "gtceu:plates/steel", "count": 1 }
+    ]
+  },
+  "outputs": {
+    "items": [
+      { "item": "rocketwa:engine_module_lv", "count": 1 }
+    ]
+  }
+}

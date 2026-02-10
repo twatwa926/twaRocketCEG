@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "rocketwa:block/avionics_bay"
+    }
+  }
+}

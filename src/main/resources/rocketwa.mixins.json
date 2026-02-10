@@ -1,0 +1,1 @@
+{"required":false,"minVersion":"0.8","package":"com.example.examplemod.mixin.rocket","compatibilityLevel":"JAVA_17","mixins":["MixinEntity","MixinServerPlayer"],"client":["MixinClientPacketListener","MixinVisualizationManager"],"server":[],"injectors":{"defaultRequire":1}}

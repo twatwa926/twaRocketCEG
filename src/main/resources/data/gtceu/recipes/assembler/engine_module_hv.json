@@ -1,0 +1,20 @@
+{
+  "type": "gtceu:assembler",
+  "conditions": [
+    { "type": "forge:mod_loaded", "modid": "gtceu" }
+  ],
+  "duration": 320,
+  "eu": 480,
+  "inputs": {
+    "items": [
+      { "item": "rocketwa:rocket_alloy_ingot", "count": 3 },
+      { "tag": "gtceu:plates/titanium", "count": 2 },
+      { "tag": "gtceu:ingots/stainless_steel", "count": 2 }
+    ]
+  },
+  "outputs": {
+    "items": [
+      { "item": "rocketwa:engine_module_hv", "count": 1 }
+    ]
+  }
+}

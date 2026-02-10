@@ -1,0 +1,74 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "rocketwa:rocket_module_core"
+  },
+  "transitionalItem": {
+    "item": "rocketwa:rocket_module_core"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        { "item": "rocketwa:rocket_module_core" },
+        { "tag": "gtceu:ingots/steel" }
+      ],
+      "results": [
+        { "item": "rocketwa:rocket_module_core" }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        { "item": "rocketwa:rocket_module_core" },
+        { "tag": "rocketwa:engine_modules" }
+      ],
+      "results": [
+        { "item": "rocketwa:rocket_module_core" }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        { "item": "rocketwa:rocket_module_core" },
+        { "tag": "gtceu:plates/steel" }
+      ],
+      "results": [
+        { "item": "rocketwa:rocket_module_core" }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        { "item": "rocketwa:rocket_module_core" },
+        { "tag": "gtceu:plates/aluminium" }
+      ],
+      "results": [
+        { "item": "rocketwa:rocket_module_core" }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        { "item": "rocketwa:rocket_module_core" },
+        { "item": "rocketwa:rocket_casing" }
+      ],
+      "results": [
+        { "item": "rocketwa:rocket_module_core" }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        { "item": "rocketwa:rocket_module_core" }
+      ],
+      "results": [
+        { "item": "rocketwa:rocket_module_core" }
+      ]
+    }
+  ],
+  "results": [
+    { "item": "rocketwa:fuel_tank" }
+  ],
+  "loops": 3
+}

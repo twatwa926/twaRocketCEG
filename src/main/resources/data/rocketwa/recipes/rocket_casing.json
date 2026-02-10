@@ -1,0 +1,34 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "rocketwa:rocket_template"
+  },
+  "transitionalItem": {
+    "item": "rocketwa:rocket_template"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        { "item": "rocketwa:rocket_template" },
+        { "item": "rocketwa:rocket_alloy_ingot" }
+      ],
+      "results": [
+        { "item": "rocketwa:rocket_template" }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        { "item": "rocketwa:rocket_template" }
+      ],
+      "results": [
+        { "item": "rocketwa:rocket_template" }
+      ]
+    }
+  ],
+  "results": [
+    { "item": "rocketwa:rocket_casing" }
+  ],
+  "loops": 1
+}

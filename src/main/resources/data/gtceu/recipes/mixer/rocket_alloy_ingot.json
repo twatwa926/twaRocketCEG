@@ -1,0 +1,20 @@
+{
+  "type": "gtceu:mixer",
+  "conditions": [
+    { "type": "forge:mod_loaded", "modid": "gtceu" }
+  ],
+  "duration": 200,
+  "eu": 30,
+  "inputs": {
+    "items": [
+      { "tag": "gtceu:dusts/iron", "count": 2 },
+      { "tag": "gtceu:dusts/copper", "count": 1 },
+      { "tag": "gtceu:dusts/redstone", "count": 2 }
+    ]
+  },
+  "outputs": {
+    "items": [
+      { "item": "rocketwa:rocket_alloy_ingot", "count": 1 }
+    ]
+  }
+}

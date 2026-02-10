@@ -1,0 +1,20 @@
+{
+  "type": "gtceu:assembler",
+  "conditions": [
+    { "type": "forge:mod_loaded", "modid": "gtceu" }
+  ],
+  "duration": 260,
+  "eu": 120,
+  "inputs": {
+    "items": [
+      { "item": "rocketwa:rocket_alloy_ingot", "count": 2 },
+      { "tag": "gtceu:plates/aluminium", "count": 2 },
+      { "tag": "gtceu:ingots/brass", "count": 2 }
+    ]
+  },
+  "outputs": {
+    "items": [
+      { "item": "rocketwa:engine_module_mv", "count": 1 }
+    ]
+  }
+}

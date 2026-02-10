@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "rocketwa:engine_module_lv",
+    "rocketwa:engine_module_mv",
+    "rocketwa:engine_module_hv"
+  ]
+}

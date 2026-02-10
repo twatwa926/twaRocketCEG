@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "tag": "rocketwa:engine_modules" }
+  ],
+  "result": {
+    "item": "rocketwa:engine_module"
+  }
+}
